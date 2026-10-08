@@ -1,0 +1,56 @@
+== worker #1 starts
+15:37:20 grasscast.durable INFO started workflow crash-demo on localhost:7233
+== worker #1 killed with SIGKILL during score_windows
+   [worker1] 15:37:20 grasscast.durable INFO worker connected to localhost:7233, polling task queue 'grasscast' (Ctrl-C to stop)
+   [worker1] 15:37:20 grasscast.durable INFO build_taste_table: start (attempt 1)
+   [worker1] 15:37:21 grasscast.durable INFO build_taste_table: done
+   [worker1] 15:37:21 grasscast.durable INFO get_forecast: start (attempt 1)
+   [worker1] 15:37:22 grasscast.durable INFO get_forecast: done
+   [worker1] 15:37:22 grasscast.durable INFO score_windows: start (attempt 1)
+== worker #2 starts (the workflow resumes on its own)
+./demo/crash_resume.sh: line 34: 1173415 Killed                  python -m grasscast durable --worker > "$OUT/worker1.log" 2>&1
+   [worker2] 15:37:23 grasscast.durable INFO worker connected to localhost:7233, polling task queue 'grasscast' (Ctrl-C to stop)
+   [worker2] 15:37:38 grasscast.durable INFO score_windows: start (attempt 2)
+   [worker2] 15:37:44 grasscast.durable INFO score_windows: done
+   [worker2] 15:37:44 grasscast.durable INFO write_plan: start (attempt 1)
+   [worker2] 15:37:44 grasscast.durable INFO write_plan: done
+== activity history (from Temporal)
+       5  2026-10-07T21:37:20Z  ActivityTaskScheduled     
+       6  2026-10-07T21:37:20Z  ActivityTaskStarted       
+       7  2026-10-07T21:37:21Z  ActivityTaskCompleted     
+      11  2026-10-07T21:37:21Z  ActivityTaskScheduled     
+      12  2026-10-07T21:37:21Z  ActivityTaskStarted       
+      13  2026-10-07T21:37:22Z  ActivityTaskCompleted     
+      17  2026-10-07T21:37:22Z  ActivityTaskScheduled     
+      18  2026-10-07T21:37:38Z  ActivityTaskStarted       
+      19  2026-10-07T21:37:44Z  ActivityTaskCompleted     
+      23  2026-10-07T21:37:44Z  ActivityTaskScheduled     
+      24  2026-10-07T21:37:44Z  ActivityTaskStarted       
+      25  2026-10-07T21:37:44Z  ActivityTaskCompleted     
+      29  2026-10-07T21:37:44Z  WorkflowExecutionCompleted
+
+grasscast: your best windows to get outside (learned from 63 logged outings)
+
+Best window each day. 'chance' = how likely you'd rate it 4-5 stars; '?' = the model is extrapolating.
+
+      GO  Wed Oct 07  17:00-18:30  bike  chance  63%  likely 1-5★   feels 75°F, wind 7 mph, clouds 0%, 1% rain
+          why: warmer than you like
+*     GO  Thu Oct 08  10:00-11:30  bike  chance  96%  likely 4-5★   feels 67°F, wind 3 mph, clouds 1%, 1% rain
+          why: right in your sweet spot
+      GO  Fri Oct 09  09:00-10:30  bike  chance  92%  likely 4-5★   feels 62°F, wind 7 mph, clouds 38%, 2% rain
+          why: higher rain risk than you like
+     GO?  Sat Oct 10  08:00-09:30  bike  chance  90%  likely 3-5★   feels 64°F, wind 7 mph, clouds 88%, 49% rain
+          why: gustier than you like; wetter than you like; higher rain risk than you like; cloudier than you like
+          ? untested: you've never logged an outing in this much rain, rain risk this high; treat as a guess
+     GO?  Sun Oct 11  12:00-13:30  bike  chance  91%  likely 4-5★   feels 68°F, wind 13 mph, clouds 8%, 81% rain
+          why: windier than you like; gustier than you like; higher rain risk than you like
+          ? untested: you've never logged an outing in gusts this strong, rain risk this high; treat as a guess
+     GO?  Mon Oct 12  13:00-14:30  bike  chance  78%  likely 2-5★   feels 65°F, wind 10 mph, clouds 66%, 55% rain
+          why: windier than you like; gustier than you like; higher rain risk than you like; cloudier than you like
+          ? untested: you've never logged an outing in rain risk this high; treat as a guess
+     GO?  Tue Oct 13  12:00-13:30  bike  chance  83%  likely 2-5★   feels 65°F, wind 8 mph, clouds 80%, 43% rain
+          why: higher rain risk than you like; cloudier than you like
+          ? untested: you've never logged an outing in rain risk this high; treat as a guess
+
+Your sweet spot (from 4-5 star outings): feels 55°F-73°F, wind under 9 mph.
+* = top pick of the week. Built with PriorLabs-TabPFN.

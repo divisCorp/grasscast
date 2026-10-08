@@ -1,0 +1,41 @@
+15:19:18 grasscast.durable INFO starting a local Temporal dev server (open source, no account needed)...
+15:19:19 grasscast.durable INFO started workflow grasscast-plan
+15:19:19 grasscast.durable INFO build_taste_table: start (attempt 1)
+15:19:19 grasscast.durable WARNING build_taste_table: attempt 1 failed: chaos monkey: simulated flaky network (GRASSCAST_CHAOS=0.75) -> Temporal will retry
+15:19:20 grasscast.durable INFO build_taste_table: start (attempt 2)
+15:19:20 grasscast.durable WARNING build_taste_table: attempt 2 failed: chaos monkey: simulated flaky network (GRASSCAST_CHAOS=0.75) -> Temporal will retry
+15:19:22 grasscast.durable INFO build_taste_table: start (attempt 3)
+15:19:22 grasscast.durable WARNING build_taste_table: attempt 3 failed: chaos monkey: simulated flaky network (GRASSCAST_CHAOS=0.75) -> Temporal will retry
+15:19:26 grasscast.durable INFO build_taste_table: start (attempt 4)
+15:19:26 grasscast.durable WARNING build_taste_table: attempt 4 failed: chaos monkey: simulated flaky network (GRASSCAST_CHAOS=0.75) -> Temporal will retry
+15:19:34 grasscast.durable INFO build_taste_table: start (attempt 5)
+15:19:35 grasscast.durable INFO build_taste_table: done
+15:19:35 grasscast.durable INFO get_forecast: start (attempt 1)
+15:19:35 grasscast.durable WARNING get_forecast: attempt 1 failed: chaos monkey: simulated flaky network (GRASSCAST_CHAOS=0.75) -> Temporal will retry
+15:19:36 grasscast.durable INFO get_forecast: start (attempt 2)
+15:19:36 grasscast.durable WARNING get_forecast: attempt 2 failed: chaos monkey: simulated flaky network (GRASSCAST_CHAOS=0.75) -> Temporal will retry
+15:19:38 grasscast.durable INFO get_forecast: start (attempt 3)
+15:19:39 grasscast.durable INFO get_forecast: done
+15:19:39 grasscast.durable INFO score_windows: start (attempt 1)
+15:19:44 grasscast.durable INFO score_windows: done
+15:19:44 grasscast.durable INFO write_plan: start (attempt 1)
+15:19:44 grasscast.durable INFO write_plan: done
+grasscast: your best windows to get outside (learned from 63 logged outings)
+Best window each day. 'chance' = how likely you'd rate it 4-5 stars; '?' = the model is extrapolating.
+      GO  Wed Oct 07  17:00-18:30  bike  chance  73%  likely 2-5★   feels 75°F, wind 7 mph, clouds 0%, 1% rain
+          why: warmer than you like
+*     GO  Thu Oct 08  10:00-11:30  bike  chance  98%  likely 5-5★   feels 67°F, wind 3 mph, clouds 1%, 1% rain
+          why: right in your sweet spot
+      GO  Fri Oct 09  09:00-10:30  bike  chance  98%  likely 5-5★   feels 62°F, wind 7 mph, clouds 38%, 2% rain
+          why: right in your sweet spot
+      GO  Sat Oct 10  08:00-09:30  bike  chance  95%  likely 4-5★   feels 64°F, wind 7 mph, clouds 88%, 49% rain
+          why: wetter than you like
+      GO  Sun Oct 11  17:00-18:30  bike  chance  87%  likely 3-5★   feels 63°F, wind 12 mph, clouds 100%, 81% rain
+          why: windier than you like; gustier than you like; wetter than you like; cloudier than you like
+      GO  Mon Oct 12  11:00-12:30  bike  chance  95%  likely 4-5★   feels 63°F, wind 11 mph, clouds 65%, 68% rain
+          why: windier than you like; gustier than you like
+      GO  Tue Oct 13  12:00-13:30  bike  chance  97%  likely 4-5★   feels 65°F, wind 8 mph, clouds 80%, 43% rain
+          why: right in your sweet spot
+Your sweet spot (from 4-5 star outings): feels 58°F-73°F, wind under 8 mph.
+* = top pick of the week. Built with PriorLabs-TabPFN.
+Wrote /tmp/gc-out/grasscast-plan.txt and /tmp/gc-out/grasscast-plan.ics

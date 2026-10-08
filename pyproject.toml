@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grasscast"
+version = "0.1.0"
+description = "A personal 'when should I go outside?' forecast. Learns what weather YOU enjoy from a tiny outing log using TabPFN, runs locally."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+  "tabpfn>=6",
+  "numpy",
+  "pandas",
+  "requests",
+]
+
+[project.optional-dependencies]
+durable = ["temporalio>=1.7"]
+dev = ["pytest", "scikit-learn", "temporalio>=1.7"]
+
+[project.scripts]
+grasscast = "grasscast.cli:main"
+
+[tool.setuptools]
+packages = ["grasscast"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

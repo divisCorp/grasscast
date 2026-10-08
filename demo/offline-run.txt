@@ -1,0 +1,26 @@
+network: none (curl failed)
+grasscast: your best windows to get outside (learned from 63 logged outings)
+
+Best window each day. 'chance' = how likely you'd rate it 4-5 stars; '?' = the model is extrapolating.
+
+      GO  Wed Oct 07  17:00-18:30  bike  chance  70%  likely 2-5★   feels 75°F, wind 7 mph, clouds 0%, 1% rain
+          why: warmer than you like
+*     GO  Thu Oct 08  10:00-11:30  bike  chance  95%  likely 4-5★   feels 67°F, wind 3 mph, clouds 1%, 1% rain
+          why: right in your sweet spot
+      GO  Fri Oct 09  09:00-10:30  bike  chance  91%  likely 4-5★   feels 62°F, wind 7 mph, clouds 38%, 2% rain
+          why: higher rain risk than you like
+     GO?  Sat Oct 10  08:00-09:30  bike  chance  88%  likely 3-5★   feels 64°F, wind 7 mph, clouds 88%, 49% rain
+          why: gustier than you like; wetter than you like; higher rain risk than you like; cloudier than you like
+          ? untested: you've never logged an outing in this much rain, rain risk this high; treat as a guess
+     GO?  Sun Oct 11  12:00-13:30  bike  chance  90%  likely 4-5★   feels 68°F, wind 13 mph, clouds 8%, 81% rain
+          why: windier than you like; gustier than you like; higher rain risk than you like
+          ? untested: you've never logged an outing in gusts this strong, rain risk this high; treat as a guess
+     GO?  Mon Oct 12  12:00-13:30  bike  chance  79%  likely 2-5★   feels 64°F, wind 11 mph, clouds 67%, 68% rain
+          why: windier than you like; gustier than you like; higher rain risk than you like; cloudier than you like
+          ? untested: you've never logged an outing in rain risk this high; treat as a guess
+     GO?  Tue Oct 13  14:00-15:30  bike  chance  81%  likely 2-5★   feels 65°F, wind 6 mph, clouds 88%, 39% rain
+          why: higher rain risk than you like; cloudier than you like
+          ? untested: you've never logged an outing in rain risk this high; treat as a guess
+
+Your sweet spot (from 4-5 star outings): feels 55°F-73°F, wind under 9 mph.
+* = top pick of the week. Built with PriorLabs-TabPFN.

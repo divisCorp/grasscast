@@ -1,0 +1,84 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//grasscast//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:grasscast-20261007T1700-bike-0@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261007T170000
+DTEND:20261007T183000
+SUMMARY:GO: bike (67% chance of 4-5 stars)
+DESCRIPTION:67% chance you'd rate this 4-5 stars (likely 2-5 stars). Feels 
+ 75°F\, wind 7 mph\, clouds 0%. Why: warmer than you like. Built with Prio
+ rLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:grasscast-20261008T1000-bike-1@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261008T100000
+DTEND:20261008T113000
+SUMMARY:GO: bike (95% chance of 4-5 stars)
+DESCRIPTION:95% chance you'd rate this 4-5 stars (likely 4-5 stars). Feels 
+ 67°F\, wind 3 mph\, clouds 1%. Why: right in your sweet spot. Built with 
+ PriorLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:grasscast-20261009T0900-bike-2@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261009T090000
+DTEND:20261009T103000
+SUMMARY:GO: bike (91% chance of 4-5 stars)
+DESCRIPTION:91% chance you'd rate this 4-5 stars (likely 4-5 stars). Feels 
+ 62°F\, wind 7 mph\, clouds 38%. Why: higher rain risk than you like. Buil
+ t with PriorLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:grasscast-20261010T0800-bike-3@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261010T080000
+DTEND:20261010T093000
+SUMMARY:GO?: bike (89% chance of 4-5 stars)
+DESCRIPTION:89% chance you'd rate this 4-5 stars (likely 3-5 stars). Feels 
+ 64°F\, wind 7 mph\, clouds 88%. Why: gustier than you like\; wetter than 
+ you like\; higher rain risk than you like\; cloudier than you like. Built 
+ with PriorLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:grasscast-20261011T1200-bike-4@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261011T120000
+DTEND:20261011T133000
+SUMMARY:GO?: bike (91% chance of 4-5 stars)
+DESCRIPTION:91% chance you'd rate this 4-5 stars (likely 4-5 stars). Feels 
+ 68°F\, wind 13 mph\, clouds 8%. Why: windier than you like\; gustier than
+  you like\; higher rain risk than you like. Built with PriorLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:grasscast-20261012T1300-bike-5@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261012T130000
+DTEND:20261012T143000
+SUMMARY:GO?: bike (76% chance of 4-5 stars)
+DESCRIPTION:76% chance you'd rate this 4-5 stars (likely 1-5 stars). Feels 
+ 65°F\, wind 10 mph\, clouds 66%. Why: windier than you like\; gustier tha
+ n you like\; higher rain risk than you like\; cloudier than you like. Buil
+ t with PriorLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:grasscast-20261013T1300-bike-6@grasscast
+DTSTAMP:20261007T213326Z
+DTSTART:20261013T130000
+DTEND:20261013T143000
+SUMMARY:GO?: bike (81% chance of 4-5 stars)
+DESCRIPTION:81% chance you'd rate this 4-5 stars (likely 2-5 stars). Feels 
+ 66°F\, wind 6 mph\, clouds 86%. Why: higher rain risk than you like\; clo
+ udier than you like. Built with PriorLabs-TabPFN.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

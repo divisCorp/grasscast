@@ -1,0 +1,20 @@
+63 outings, activities: bike, hike, run
+
+5-fold cross-validation, repeated twice (lower MAE is better):
+                    model  MAE (stars)  rank corr
+       TabPFN (grasscast)         0.59       0.87
+            random forest         0.73       0.82
+         ridge regression         0.89       0.76
+     average per activity         1.13       0.30
+always guess your average         1.31      -0.20
+
+Held-out MAE as the log grows (how many outings until it knows you?):
+model    TabPFN (grasscast)  average per activity  random forest
+outings                                                         
+10                     1.06                  1.27           1.15
+15                     1.03                  1.30           1.11
+20                     0.95                  1.29           1.07
+30                     0.85                  1.21           0.90
+40                     0.66                  1.16           0.78
+
+Built with PriorLabs-TabPFN.
